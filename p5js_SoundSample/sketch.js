@@ -5,7 +5,7 @@ var scale = 1.0;
 
 function setup() {
     createCanvas(1920, 1080);
-    background(0, 0, 0);
+    background(255, 0, 0);
     // Create an audio input and start it
     mic = new p5.AudioIn();
     mic.start();
