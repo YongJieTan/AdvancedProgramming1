@@ -4,7 +4,7 @@ var amp;
 var scale = 1.0;
 
 function setup() {
-    createCanvas(1680, 1050);
+    createCanvas(windowWidth, windowHeight);
     background(255, 0, 0);
     // Create an audio input and start it
     mic = new p5.AudioIn();
@@ -25,6 +25,6 @@ function draw() {
     scale = map(amp.getLevel(), 0, 0.5, 10, width);
     // Draw the circle based on the volume
     fill(255, 0, 240);
-    ellipse(width / 2, height / 2, scale, scale);
+    square(width / 2, height / 2, scale, scale);
     // ellipse(width / 2, height / 2, width, width);
 }
