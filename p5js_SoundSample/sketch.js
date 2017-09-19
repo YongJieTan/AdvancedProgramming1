@@ -48,7 +48,7 @@ function draw() {
 
     // Draw the circle based on the volume
 
-    fill(255, 174, 216);
+    fill(255, 247, 0);
 
     ellipse(width / 2, height / 2, scale, scale);
 
