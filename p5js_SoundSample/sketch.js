@@ -5,40 +5,15 @@ var mic;
 var amp;
 
 
-
-
-
-
-
 var scale = 1.0;
 
 
-
-
-
-
-
 function setup() {
-
-
-
     createCanvas(windowWidth, windowHeight);
-
-
-
     background(255, 0, 0);
-
-
-
     // Create an audio input and start it
-
-
-
     mic = new p5.AudioIn();
-
-
-
-    mic.start();
+   mic.start();
 
 
 
@@ -165,10 +140,4 @@ scale = map(amp.getLevel(), 0, 1.0, 10, width);
 }
 
 
-© 2017 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
 
