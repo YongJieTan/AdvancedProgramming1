@@ -1,4 +1,3 @@
-
 var mic;
 
 var amp;
@@ -31,8 +30,6 @@ function setup() {
 
 
 
-
-
 function draw() {
 
     // Draw a background that fades to black
@@ -51,7 +48,7 @@ function draw() {
 
     // Draw the circle based on the volume
 
-    fill(255, 0, 240);
+    fill(255, 174, 216);
 
     ellipse(width / 2, height / 2, scale, scale);
 
@@ -72,3 +69,16 @@ scale = map(amp.getLevel(), 0, 0.8, 10, width);
     // ellipse(width / 2, height / 2, width, width);
 
 }
+
+scale = map(amp.getLevel(), 0, 1.0, 10, width);
+
+    // Draw the circle based on the volume
+
+    fill(255, 37, 149);
+
+    ellipse(width / 2, height / 2, scale, scale);
+
+    // ellipse(width / 2, height / 2, width, width);
+
+}
+
