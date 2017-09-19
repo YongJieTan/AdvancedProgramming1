@@ -36,3 +36,5 @@ scale = map(amp.getLevel(), 0, 0.8, 10, width);
     // ellipse(width / 2, height / 2, width, width);
 }
 
+
+
