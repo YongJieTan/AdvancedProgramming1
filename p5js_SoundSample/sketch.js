@@ -37,4 +37,11 @@ scale = map(amp.getLevel(), 0, 0.8, 10, width);
 }
 
 
+scale = map(amp.getLevel(), 0, 1.0, 10, width);
+    // Draw the circle based on the volume
+    fill(255, 0, 131);
+    ellipse(width / 2, height / 2, scale, scale);
+    // ellipse(width / 2, height / 2, width, width);
+}
+
 
