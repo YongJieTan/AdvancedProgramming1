@@ -18,7 +18,7 @@ function setup() {
 function draw() {
     // Draw a background that fades to black
     noStroke();
-    fill(0, 0, 255, 10);
+    fill(0, 0, 0);
     rect(0, 0, width, height);
     // The getLevel() method returns values between 0 and 1,
     // so map() is used to convert the values to larger numbers
