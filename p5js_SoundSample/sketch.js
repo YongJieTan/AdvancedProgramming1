@@ -4,7 +4,7 @@ var amp;
 var scale = 1.0;
 
 function setup() {
-    createCanvas(1920, 1080);
+    createCanvas(1680, 1050);
     background(255, 0, 0);
     // Create an audio input and start it
     mic = new p5.AudioIn();
@@ -19,7 +19,7 @@ function draw() {
     // Draw a background that fades to black
     noStroke();
     fill(0, 0, 200, 10);
-    rect(0, 0, 500, 500);
+    rect(0, 0, width, height);
     // The getLevel() method returns values between 0 and 1,
     // so map() is used to convert the values to larger numbers
     scale = map(amp.getLevel(), 0, 0.5, 10, width);
