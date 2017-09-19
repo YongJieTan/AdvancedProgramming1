@@ -1,4 +1,4 @@
-255var mic;
+var mic;
 var amp;
 
 var scale = 1.0;
